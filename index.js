@@ -34,8 +34,11 @@ exports.decorateConfig = config => Object.assign({}, config, {
 	css: `
 		${config.css}
 
+		.splitpane_panes .term_fit {
+			border: 1px solid transparent;
+		}
 		.splitpane_panes .term_fit.term_active {
-			border: 1px solid #373D4F;
+			border-color: #373D4F;
 		}
 	`
 });
